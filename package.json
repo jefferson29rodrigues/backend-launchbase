@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/jefferson29rodrigues/backend-launchbase/issues"
   },
-  "homepage": "https://github.com/jefferson29rodrigues/backend-launchbase#readme"
+  "homepage": "https://github.com/jefferson29rodrigues/backend-launchbase#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
 }
