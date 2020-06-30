@@ -15,6 +15,10 @@ server.get("/", function(req, res) {
     return res.render("index");
 });
 
+server.get("/portifolio", function(req, res) {
+    return res.render("portifolio");
+});
+
 server.listen(5000, function() {
     console.log("server is running");
 });
