@@ -5,10 +5,10 @@ const server = express();
 
 server.use(express.static('public'));
 
-server.set("view engine", "html");
+server.set("view engine", "njk");
 
 nunjucks.configure("views", {
-    express:server
+    express: server
 });
 
 server.get("/", function(req, res) {
@@ -17,6 +17,10 @@ server.get("/", function(req, res) {
 
 server.get("/portifolio", function(req, res) {
     return res.render("portifolio");
+});
+
+server.get("/layout", function(req, res) {
+    return res.render("layout");
 });
 
 server.listen(5000, function() {
