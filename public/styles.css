@@ -140,8 +140,8 @@ header {
 .modal .close-modal {
     color: black;
     position: absolute;
-    right: 3.5px;
-    top: 3.5px;
+    right: 0px;
+    top: 0px;
     cursor: pointer;
 }
 

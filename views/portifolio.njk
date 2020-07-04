@@ -14,83 +14,20 @@
     </div>
     <section class="cards">
         
-        <div class="card" id="ZeY0AAx1GAw">
+        {% for item in items %}
+        <div class="card" id="{{item.id}}">
             <div class="card__image-container">
-                <img src="https://img.youtube.com/vi/ZeY0AAx1GAw/hqdefault.jpg" alt="foto-crieSeuSite">
+                <img src="https://img.youtube.com/vi/{{item.id}}/hqdefault.jpg" alt="Imagem de {{item.title}}">
             </div>
             <div class="card__content">
-                <p>Fórmulario Animado com JS puro e CSS Animation</p>
+                <p>{{item.title}}</p>
             </div>
             <div class="card__info">
-                <p>57 min</p>
-                <p class="card__price">Free</p>
+                <p>{{item.duration}}</p>
+                <p class="card__price">{{item.price}}</p>
             </div>
         </div>
-
-        <div class="card" id="WS66FgmNsMI">
-            <div class="card__image-container">
-                <img src="https://img.youtube.com/vi/WS66FgmNsMI/hqdefault.jpg" alt="foto-crieSeuSite">
-            </div>
-            <div class="card__content">
-                <p>Fórmulario Animado com JS puro e CSS Animation</p>
-            </div>
-            <div class="card__info">
-                <p>57 min</p>
-                <p class="card__price">Free</p>
-            </div>
-        </div>
-
-        <div class="card" id="ZeY0AAx1GAw">
-            <div class="card__image-container">
-                <img src="https://img.youtube.com/vi/ZeY0AAx1GAw/hqdefault.jpg" alt="foto-crieSeuSite">
-            </div>
-            <div class="card__content">
-                <p>Fórmulario Animado com JS puro e CSS Animation</p>
-            </div>
-            <div class="card__info">
-                <p>57 min</p>
-                <p class="card__price">Free</p>
-            </div>
-        </div>
-
-        <div class="card" id="oUPaJxk6TZ0">
-            <div class="card__image-container">
-                <img src="https://img.youtube.com/vi/oUPaJxk6TZ0/hqdefault.jpg" alt="foto-crieSeuSite">
-            </div>
-            <div class="card__content">
-                <p>Fórmulario Animado com JS puro e CSS Animation</p>
-            </div>
-            <div class="card__info">
-                <p>57 min</p>
-                <p class="card__price">Free</p>
-            </div>
-        </div>
-
-        <div class="card" id="D3L8IOncLkg">
-            <div class="card__image-container">
-                <img src="https://img.youtube.com/vi/D3L8IOncLkg/hqdefault.jpg" alt="foto-crieSeuSite">
-            </div>
-            <div class="card__content">
-                <p>Fórmulario Animado com JS puro e CSS Animation</p>
-            </div>
-            <div class="card__info">
-                <p>57 min</p>
-                <p class="card__price">Free</p>
-            </div>
-        </div>
-
-        <div class="card" id="ZeY0AAx1GAw">
-            <div class="card__image-container">
-                <img src="https://img.youtube.com/vi/ZeY0AAx1GAw/hqdefault.jpg" alt="foto-crieSeuSite">
-            </div>
-            <div class="card__content">
-                <p>Fórmulario Animado com JS puro e CSS Animation</p>
-            </div>
-            <div class="card__info">
-                <p>57 min</p>
-                <p class="card__price">Free</p>
-            </div>
-        </div>
+        {% endfor %}
 
     </section>
 
