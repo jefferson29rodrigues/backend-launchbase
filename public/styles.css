@@ -165,7 +165,7 @@ iframe {
 
 /*=== FEATURED===*/
 
-.card__image-container {
+.featured-wrapper.card__image-container {
     position: relative;
 }
 
