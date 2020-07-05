@@ -21,13 +21,15 @@ module.exports = [
         id: "oUPaJxk6TZ0",
         title: "FórmulFórmulario Animado com JS puro e CSS Animation Animation",
         duration: "57 min",
-        price: "Free"
+        price: "Free",
+        featured: true
     },
     {
         id: "D3L8IOncLkg",
         title: "FóFórmulario Animado n",
         duration: "57 min",
-        price: "Free"
+        price: "Free",
+        featured: true
     },
     {
         id: "ZeY0AAx1GAw",
