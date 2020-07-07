@@ -39,6 +39,23 @@ server.get("/layout", function(req, res) {
     return res.render("layout");
 });
 
+server.get("/video", function(req, res) {
+    const id = req.query.id;
+
+    const video = videos.find(function(video) {
+        if (video.id == id) {
+            return true;
+        }
+    });
+
+    if (!video) {
+        return res.send("Video not found!");
+    }
+
+
+    return res.send("video", { item: video });
+});
+
 server.listen(5000, function() {
     console.log("server is running");
 });
