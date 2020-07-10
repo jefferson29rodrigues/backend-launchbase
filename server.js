@@ -43,9 +43,13 @@ server.get("/video", function(req, res) {
     const id = req.query.id;
 
     const video = videos.find(function(video) {
+        return video.id == id;
+
+        /*
         if (video.id == id) {
             return true;
         }
+        */
     });
 
     if (!video) {
