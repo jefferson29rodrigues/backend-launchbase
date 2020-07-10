@@ -53,7 +53,7 @@ server.get("/video", function(req, res) {
     }
 
 
-    return res.send("video", { item: video });
+    return res.render("video", { item: video });
 });
 
 server.listen(5000, function() {

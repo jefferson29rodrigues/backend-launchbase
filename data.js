@@ -26,7 +26,7 @@ module.exports = [
     },
     {
         id: "D3L8IOncLkg",
-        title: "FóFórmulario Animado n",
+        title: "Fórmulario Animado",
         duration: "57 min",
         price: "Free",
         featured: true
