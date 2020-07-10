@@ -179,3 +179,11 @@ iframe {
     border-radius: 15px;
     font-weight: bolder;
 }
+
+/*=== VíDEO PAGE ===*/
+
+.video {
+    margin: 0 auto;
+    max-width: 800px;
+}
+
